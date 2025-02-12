@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB Assignment</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Landing</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Introduce Your Product <br> Quickly & Effectively</h1>
+            <p>Boost your productivity with our powerful and lightweight solutions, designed to enhance your workflow effortlessly.</p>
+            <div class="buttons">
+                <button class="primary">Purchase UI Kit</button>
+                <button class="secondary">Learn More</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://img.freepik.com/premium-vector/web-development-programming-languages-css-html-it-ui-programmer-cartoon-character-developing-website-coding-flat-illustration-banner_128772-898.jpg">
+        </div>
+    </section>
+    
+    <section class="gallery" id="gallery">
+        <h2>Image Gallery</h2>
+        <div class="gallery-container">
+            <figure>
+                <img src="https://img.freepik.com/free-vector/mobile-apps-concept-illustration_114360-4463.jpg?semt=ais_hybrid" alt="Image 1" onclick="openLightbox(this)">
+                <figcaption>Explore modern mobile app concepts, showcasing intuitive designs and seamless user experience enhancements for today's digital landscape.</figcaption>
+            </figure>
+            <figure>
+                <img src="https://img.freepik.com/free-vector/online-dating-concept-illustration_114360-6559.jpg" alt="Image 2" onclick="openLightbox(this)">
+                <figcaption>A vibrant online dating concept illustration highlighting virtual connections and innovative matchmaking possibilities in the digital era.</figcaption>
+            </figure>
+            <figure>
+                <img src="https://www.pixelstalk.net/wp-content/uploads/2016/10/3D-iPhone-Wallpaper-Apples-Download.jpg" alt="Image 3" onclick="openLightbox(this)">
+                <figcaption>Dynamic 3D iPhone wallpaper featuring a sleek Apple-themed design, blending technology with aesthetic elegance.</figcaption>
+            </figure>
+            <figure>
+                <img src="https://www.binaryfolks.com/media/blog/Reasons%20to%20build%20a%20mobile%20app/4428861.png" alt="Image 4" onclick="openLightbox(this)">
+                <figcaption>Innovative mobile app solutions transforming digital interactions through advanced UI/UX methodologies.</figcaption>
+            </figure>
+            <figure>
+                <img src="https://img.freepik.com/free-vector/online-dating-concept-illustration_114360-6559.jpg" alt="Image 5" onclick="openLightbox(this)">
+                <figcaption>A futuristic vision of online dating, emphasizing AI-powered matchmaking and secure digital relationships.</figcaption>
+            </figure>
+            <figure>
+                <img src="https://img.freepik.com/premium-vector/woman-greeting-man-appearing-from-smartphone_150234-183051.jpg" alt="Image 6" onclick="openLightbox(this)">
+                <figcaption>Creative illustration of a person emerging from a smartphone, symbolizing virtual reality and modern communication breakthroughs.</figcaption>
+            </figure>
+        </div>
+        <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+            <img id="lightbox-img" src="">
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-top">
+            <div class="footer-year">&copy; 2025</div>
+            <div class="footer-logo">Landing</div>
+            <div class="footer-buy"><button class="buy-btn">Buy Now</button></div>
+        </div>
+       
+    </footer>
+    
+    <script>
+        function openLightbox(img) {
+            document.getElementById('lightbox').classList.add('active');
+            document.getElementById('lightbox-img').src = img.src;
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+        }
+    </script>
+</body>
+</html>
